@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>Emotion 98.3</title>
+
+  <style>
+    body { font-family: Barlow, sans-serif; font-weight: 900; padding-top: 150px !important; background: #222; }
+    video { border-radius: 5px; }
+    .emotion { top: -150px; text-shadow: 3px 3px 0 #000; }
+  </style>
+</head>
+<body class="m-0 p-0 w-screen h-screen">
+  
+  <h1 class="text-center text-4xl font-bold mt-20 mb-10">
+    <img class="w-64 mx-auto" src="./emotion.svg" alt="Emotion 98.3">
+  </h1>
+
+  <div class="flex justify-center items-center relative">
+    <canvas class="js-overlay absolute t-0"></canvas>
+    <video class="js-video" width="720" height="560" autoplay muted></video>
+  </div>
+
+  <div class="emotion js-emotion text-center text-white mt-5 text-2xl uppercase relative text-6xl">Poczekaj chwilę...</div>
+
+  <script src="./face-api.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

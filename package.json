@@ -1,0 +1,12 @@
+{
+  "name": "emotions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^2.0.0",
+    "canvas": "^2.6.1",
+    "face-api.js": "^0.22.2",
+    "node-fetch": "^2.6.0"
+  }
+}
